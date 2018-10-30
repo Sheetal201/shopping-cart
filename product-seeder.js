@@ -2,7 +2,7 @@ var Product = require('../models/product');
 
 var mongoose = require('mongoose');
 
-mongoose.connect('localhost:27017/shopping');
+mongoose.connect('mongodb://localhost:27017/shopping', {useNewUrlParser: true});
 
 var products = [new Product({
 	imagePath: 'https://5.imimg.com/data5/YW/FK/MY-16269511/leather-fashion-handbags-250x250.jpg',
